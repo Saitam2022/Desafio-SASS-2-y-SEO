@@ -1,0 +1,29 @@
+/* SE APLICARON VARIABLES PARA LOS COLORES DEL NAVBAR, MAIN, FOOTER Y NEWSLETTER */
+/* SE APLICARON EXTENDS PARA LOS BOTONES DEL NAVBAR Y DEL NEWSLETTER */
+/* SE APLICÓ MIXIN PARA EL BORDER RADIUS */
+
+$navbarymain-color: #0C0C0E;
+$mainfooterynewsletter-color: grey;
+$footersocial-color: #F21628;
+
+.boton {
+    background-color: #0C0C0E;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.boton-buscar {
+    @extend .boton;
+    color: yellow;
+    border: yellow solid 2px;
+}
+
+.boton-subscribe {
+    @extend .boton;
+    color: #F21628;
+    border:#F21628 solid 2px;
+}
+
+@mixin borderradius {
+    border-radius: 15px;
+}

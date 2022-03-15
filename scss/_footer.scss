@@ -1,0 +1,51 @@
+/* FOOTER */
+/* EN EL FOOTER SE APLICARON ANIDAMIENTOS Y UNA PSEUDOCLASE */
+/* SE APLICÓ MAPS DE COLORES PARA LAS REDES SOCIALES DEL FOOTER Y UN BUCLE EACH, Y TAMBIÉN UN MIXIN PARA EL BORDER RADIUS */
+
+#newsletterformulario {
+    background-color: $mainfooterynewsletter-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.footer {
+    background: $mainfooterynewsletter-color;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer__elemento {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.footer__link {
+    color: $footersocial-color;
+    text-decoration: none;
+}
+
+$redes: (
+    facebook:blue,
+    instagram: violet,
+    youtube:red,
+    mail:yellow,
+);
+
+@each $red, $color in $redes {
+    .footer__socialimg_#{$red} {
+        width:40px;
+        &:hover {
+            background-color: $color;
+            @include borderradius;
+        }
+    } 
+}
+
+.footer__creditosyterminos {
+    font-size: 12px;
+}
+
+/* FIN FOOTER */

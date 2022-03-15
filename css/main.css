@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* SE APLICARON PARTIALS PARA ORDENAR POR SECCIONES */
+/* SE APLICARON VARIABLES PARA LOS COLORES DEL NAVBAR, MAIN, FOOTER Y NEWSLETTER */
+/* SE APLICARON EXTENDS PARA LOS BOTONES DEL NAVBAR Y DEL NEWSLETTER */
+/* SE APLICÓ MIXIN PARA EL BORDER RADIUS */
+.boton, .boton-buscar, .boton-subscribe {
+  background-color: #0C0C0E;
+  color: #fff;
+  border: solid 2px #fff; }
+
+.boton-buscar {
+  color: yellow;
+  border: yellow solid 2px; }
+
+.boton-subscribe {
+  color: #F21628;
+  border: #F21628 solid 2px; }
+
+/* ACA COLOCO EL RESETEO GENERAL */
+body {
+  font-family: 'Mochiy Pop P One', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* NAV */
+/* PARA EL NAV SE REALIZÓ UN ANIDAMIENTO Y SE UTILIZÓ UNA PSEUDOCLASE */
+.navbar {
+  background-color: #0C0C0E; }
+
+.navbar-brand img {
+  width: 200px;
+  transition: .6s all;
+  text-align: center; }
+  .navbar-brand img:hover {
+    width: 240px; }
+
+/* FIN NAV */
+/* MAIN */
+/* SE ANIDÓ EL MAIN Y SE APLICÓ UNA PSEUDOCLASE */
+/* SE APLICARON MIXINS PARA EL BORDER RADIUS DE LOS TITULOS */
+main {
+  padding: 10px;
+  text-align: center;
+  background-color: #0C0C0E;
+  overflow: hidden;
+  height: auto; }
+  main h4 {
+    background-color: grey;
+    border-radius: 15px;
+    border-color: #F21628;
+    border-width: 2px;
+    border-style: solid;
+    padding: 8px 8px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+  .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff; }
+
+.my-float {
+  margin-top: 16px; }
+
+/* FIN MAIN */
+/* FOOTER */
+/* EN EL FOOTER SE APLICARON ANIDAMIENTOS Y UNA PSEUDOCLASE */
+/* SE APLICÓ MAPS DE COLORES PARA LAS REDES SOCIALES DEL FOOTER Y UN BUCLE EACH, Y TAMBIÉN UN MIXIN PARA EL BORDER RADIUS */
+#newsletterformulario {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; }
+
+.footer {
+  background: grey;
+  text-align: center;
+  padding: 10px; }
+
+.footer__elemento {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px; }
+
+.footer__link {
+  color: #F21628;
+  text-decoration: none; }
+
+.footer__socialimg_facebook {
+  width: 40px; }
+  .footer__socialimg_facebook:hover {
+    background-color: blue;
+    border-radius: 15px; }
+
+.footer__socialimg_instagram {
+  width: 40px; }
+  .footer__socialimg_instagram:hover {
+    background-color: violet;
+    border-radius: 15px; }
+
+.footer__socialimg_youtube {
+  width: 40px; }
+  .footer__socialimg_youtube:hover {
+    background-color: red;
+    border-radius: 15px; }
+
+.footer__socialimg_mail {
+  width: 40px; }
+  .footer__socialimg_mail:hover {
+    background-color: yellow;
+    border-radius: 15px; }
+
+.footer__creditosyterminos {
+  font-size: 12px; }
+
+/* FIN FOOTER */

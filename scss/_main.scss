@@ -1,0 +1,48 @@
+/* MAIN */
+/* SE ANIDÓ EL MAIN Y SE APLICÓ UNA PSEUDOCLASE */
+/* SE APLICARON MIXINS PARA EL BORDER RADIUS DE LOS TITULOS */
+
+main {
+	padding: 10px;
+    text-align: center;
+    background-color:$navbarymain-color;
+	overflow:hidden;
+    height: auto;
+    h4 {
+        background-color: $mainfooterynewsletter-color;
+        @include borderradius;
+        border-color: #F21628;
+        border-width: 2px;
+        border-style: solid;
+        padding: 8px 8px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius: 50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+        &:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color:#fff;
+        }
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* FIN MAIN */
